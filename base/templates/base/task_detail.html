@@ -1,0 +1,20 @@
+{% extends "base/main.html"%}
+{%load static %}
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>{{ task.title }}</h1>
+<p>Deal: {{ task.deal }}</p>
+<p>Status: {{ task.status }}</p>
+<p>created: {{ task.created_at }}</p>
+<a href="{% url 'task_edit' task.pk %}">Edit</a>
+
+
+
+
+{% endblock %}

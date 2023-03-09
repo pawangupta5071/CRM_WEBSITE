@@ -1,0 +1,21 @@
+{% extends "base/main.html"%}
+{%load static %}
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>{{ deal.title }}</h1>
+<p>Company: {{ deal.company }}</p>
+<p>Amount: {{ deal.amount }}</p>
+<p>Status: {{ deal.status }}</p>
+<p>created: {{ deal.created_at }}</p>
+<a href="{% url 'deal_edit' deal.pk %}">Edit</a>
+
+
+
+
+{% endblock %}

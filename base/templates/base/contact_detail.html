@@ -1,0 +1,20 @@
+{% extends "base/main.html"%}
+{%load static %}
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>{{ contact.first_name }} {{ contact.last_name }}</h1>
+<p>Email: {{ contact.email }}</p>
+<p>Phone: {{ contact.phone }}</p>
+<p>Company: {{ contact.company }}</p>
+<a href="{% url 'contact_edit' contact.pk %}">Edit</a>
+
+
+
+
+{% endblock %}
